@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* background: rgb(192, 207, 255); */
+    background: rgba(58, 123, 213, 0.276);
+   
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.6);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    gap: 1rem;
+    padding: 1rem;
+    /* transition: width 0.3s ease; */
+}
+
+.navbar img {
+    width: 40%;
+    border-radius: 50%;
+}
+.apartments {
+    height: 2rem;
+    background-color: white;
+}
+.new-apartment {
+    width: 100%;
+    background-color: white;
+    color: #646970;
+    border: 1px solid rgb(63, 63, 63);
+    border-radius: 0.3rem;
+}
+.new-apartment:hover{
+    background-color: #646970;
+    color: white;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    margin-left: 1.5rem;
+    
+}
+
+.links li {
+    list-style: none;
+    color: #646970;
+    margin-top: 0.5rem;
+    padding: 0.3rem;
+}
+.links li:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #646970;
+    border-radius: 7px;
+}
+.fa-solid {
+    font-size: 1.5rem;
+}
+.links li a {
+    text-decoration: none;
+    margin: 0.3rem;
+    font-size: 1.3rem;
+    color: #646970;
+}
+.sidebar:hover .links li a {
+    color: #646970;
+}
+#apartments {
+    width: 100%;
+    margin-top: 0.4rem;
+}
+h2 {
+    color:  #646970;;
+}
+section {
+    margin-left: 260px;
+    padding: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+.active {
+    display: block;
+}

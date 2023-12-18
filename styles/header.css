@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem;
+}
+
+.header button {
+    width: 2rem;
+    height: 2rem;
+    color: #646970;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+.header button:hover {
+    background-color: #646970;
+    color: white;
+}
+
+hr {
+    margin-bottom: 1.5rem;
+}

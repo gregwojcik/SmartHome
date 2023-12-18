@@ -1,0 +1,10 @@
+.security {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+}
+
+.camera-view {
+    background-color: #646970;
+    margin: 1rem;
+}

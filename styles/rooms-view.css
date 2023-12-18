@@ -1,0 +1,87 @@
+
+.added-rooms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: auto;
+}
+
+.room {
+    width: 7rem;
+    height: 7rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.add-new {
+    width: 7rem;
+    height: 7rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border: none;
+    background-color: #fff;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.appliances-wrapper {
+    max-height: 5rem;
+    overflow-y: scroll;
+    background-color: aliceblue;
+    padding: 0.3rem;
+    margin: 1rem;
+}
+.name-wrapper {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+}
+#room-name {
+    width: 70%;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="checkbox"] {
+    margin-bottom: 0.2rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.2rem}
+
+.checkbox-label input {
+    margin-right: 8px;
+}
+
+input[type="submit"] {
+    background-color: #7a8794;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+

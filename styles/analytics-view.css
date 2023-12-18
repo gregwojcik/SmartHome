@@ -1,0 +1,14 @@
+.charts {
+    padding: 2rem;
+    width: 80%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.chart {
+    padding: 1rem;
+    margin: 1rem;
+    border: solid 1px black;
+}
+
+
