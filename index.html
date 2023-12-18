@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/rooms-view.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="images/profile.png" alt="profile-pic">
+        <div class="my-apartments">
+            <h2>My Apartments</h2>
+            <select  id="apartments">
+                <option value="h1">Apartment1</option>
+                <option value="h2">Apartment2</option>
+                <option value="h3">Apartment3</option>
+                <option value="h4">Apartment4</option>
+            </select>
+           
+            <a href="views/add_new_apartment.html">
+                <button class="new-apartment">add new apartment</button></a>
+        </div>
+        
+        <div class="container">
+            <ul class="menu-links links">
+                <li >
+                    <a href="#" class="fa-solid fa-house-signal"></a>
+                    <a href="#">Appliances</a>
+                </li>
+                <li>
+                    <a href="views/security.html" class="fa-solid fa-video"></a>
+                    <a href="views/security.html">Security</a>
+                </li>
+                <li>
+                    <a href="views/analytics.html" class="fa-solid fa-chart-simple"></a>
+                    <a href="views/analytics.html">Analytics</a>
+                </li>
+            </ul>
+            <ul class="options links">
+                <li>
+                    <a href="views/settings.html" class="fa-solid fa-gear"></i>
+                    <a href="views/settings.html">Settings</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <a href="#">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="rooms">
+        <ul class="added-rooms">
+            <button class="add-new"><i class="fa-solid fa-plus"></i></button>
+        </ul>
+    </section>
+    <script type="module" src="./scripts/rooms.js"></script>
+    
+</body>
+</html>
