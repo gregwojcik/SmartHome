@@ -58,7 +58,7 @@ function renderDevices(deviceList) {
 }
 
 document.querySelector('.header button').addEventListener('click', () => {
-    window.location.href = '../home.html';
+    window.location.href = '../index.html';
 });
 const searchParams = new URLSearchParams(window.location.search);
 const room = searchParams.get('room');
