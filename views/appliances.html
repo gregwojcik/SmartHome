@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/appliances.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../images/profile.png" alt="profile-pic">
+        <div class="my-apartments">
+            <h2>My Apartments</h2>
+            <select  id="apartments">
+                <option value="h1">Apartment1</option>
+                <option value="h2">Apartment2</option>
+                <option value="h3">Apartment3</option>
+                <option value="h4">Apartment4</option>
+            </select>
+            <a href="../add_new_apartments.html">
+                <button disabled class="new-apartment">add new apartment</button></a>
+        </div>
+        
+        <div class="container">
+            <ul class="menu-links links">
+                <li >
+                    <a href="../index.html" class="fa-solid fa-house-signal"></a>
+                    <a href="../index.html">Appliances</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-video"></i>
+                    <a href="#">Security</a>
+                </li>
+                <li>
+                    <a href="./analytics.html" class="fa-solid fa-chart-simple"></a>
+                    <a href="./analytics.html">Analytics</a>
+                </li>
+            </ul>
+            <ul class="options links">
+                <li>
+                    <a href="./settings.html" class="fa-solid fa-gear"></a>
+                    <a href="./settings.html">Settings</a>
+                </li>
+                <li>
+                    <a href="#" class="fa-solid fa-right-to-bracket"></a>
+                    <a href="#">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="show-appliances">
+        <div class="header">
+            <button><i class="fa-solid fa-less-than"></i></button>
+            <h2 class="curr-room"></h2>
+        </div>
+        <div class="devices-container" id="devicesContainer">
+            
+        </div>
+        
+    </section>
+    
+    <script src="../scripts/showAppliances.js" type="module"></script>
+</body>
+</html>

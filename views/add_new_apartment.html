@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/rooms-view.css">
+</head>
+<body>
+    <!--Belka nawigacyjna strony-->
+    <nav class="navbar">
+        <img src="../images/profile.png" alt="profile-pic">
+        <div class="my-apartments">
+            <h2>My Apartments</h2>
+            <select  id="apartments">
+                <option value="h1">Apartment1</option>
+                <option value="h2">Apartment2</option>
+                <option value="h3">Apartment3</option>
+                <option value="h4">Apartment4</option>
+            </select>
+            <a href="../add_new_apartments.html">
+                <button disabled class="new-apartment">add new apartment</button></a>
+        </div>
+        
+        <div class="container">
+            <ul class="menu-links links">
+                <li >
+                    <a href="../index.html" class="fa-solid fa-house-signal"></a>
+                    <a href="../index.html">Appliances</a>
+                </li>
+                <li>
+                    <a href="../security.html" class="fa-solid fa-video"></a>
+                    <a href="../security.html">Security</a>
+                </li>
+                <li>
+                    <a href="../analytics.html" class="fa-solid fa-chart-simple"></a>
+                    <a href="../analytics.html">Analytics</a>
+                </li>
+            </ul>
+            <ul class="options links">
+                <li>
+                    <a href="../settings.html" class="fa-solid fa-gear"></i>
+                    <a href="../settings.html">Settings</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <a href="#">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+       
+    <!--Dodawanie nowych mieszkań-->
+    <section class="create-new-apartment active">
+        <div class="header">
+            <a href="../index.html"><button><i class="fa-solid fa-less-than"></i></button></a>
+            <h2>Add new apartment</h2>
+        </div>
+        <hr>
+        <form id="add-new-apartment-form">
+            <div class="name-wrapper">
+                <label for="apartment-name">Apartment name:&nbsp<b>*</b>&nbsp</label>
+                <input type="text" required="required" pattern="[A-Za-z0-9 ]{1,32}" id="apartment-name" name="apartment-name">
+            </div>
+            <div class="name-wrapper">
+                <label for="apartment-address">Apartment address:</label>
+                <input type="text" id="apartment-address" name="apartment-address"> 
+            </div>
+            <p style="font-size:12px"><b>*</b> - filling this field is necessary</p>
+            <br>
+            <a href="../index.html"><input type="submit" value="Add"></a>
+        </form>
+    </section>
+
+</body>
+</html>

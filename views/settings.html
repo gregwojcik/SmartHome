@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/security-view.css">
+    <link rel="stylesheet" href="../styles/toggle-switch.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../images/profile.png" alt="profile-pic">
+        <div class="my-apartments">
+            <h2>My Apartments</h2>
+            <select  id="apartments">
+                <option value="h1">Apartment1</option>
+                <option value="h2">Apartment2</option>
+                <option value="h3">Apartment3</option>
+                <option value="h4">Apartment4</option>
+            </select>
+            <a href="../add_new_apartments.html">
+                <button disabled class="new-apartment">add new apartment</button></a>
+        </div>
+        
+        <div class="container">
+            <ul class="menu-links links">
+                <li >
+                    <a href="../index.html" class="fa-solid fa-house-signal"></a>
+                    <a href="../index.html">Appliances</a>
+                </li>
+                <li>
+                    <a href="./security.html" class="fa-solid fa-video"></i>
+                    <a href="./security.html">Security</a>
+                </li>
+                <li>
+                    <a href="./analytics.html" class="fa-solid fa-chart-simple"></a>
+                    <a href="./analytics.html">Analytics</a>
+                </li>
+            </ul>
+            <ul class="options links">
+                <li>
+                    <a href="#" class="fa-solid fa-gear"></a>
+                    <a href="#">Settings</a>
+                </li>
+                <li>
+                    <a href="#" class="fa-solid fa-right-to-bracket"></a>
+                    <a href="#">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="charts">
+        <br>
+        <h2>User Profile</h2>
+        <div class="user-profile">
+            <div>
+                <a>User Name</a>
+                <i class="fa-solid fa-pencil"></i>
+            </div>
+            <div>
+                <a>Password</a>
+                <i class="fa-solid fa-pencil"></i>
+            </div> 
+        </div>
+        
+        <br>
+        <h2>App Settings</h2>
+        <div class="language">
+            <label for="Language">Language:</label>
+            <select  id="Language" name="Language">
+                <option value="h1">English</option>
+                <option value="h2">Polish</option>
+            </select>
+        </div>
+        
+        <div class="Theme">
+            <label for="theme">Theme:</label>
+            <select  id="theme" name="theme">
+                <option value="h1">Dark Mode</option>
+                <option value="h2">Light Mode</option>
+            </select>
+        </div>
+        
+        <br>
+        <h2>Accessibility Features</h2>
+        <div class="lights-chart chart">
+            <div class="Font">
+                <label for="font">Font size:</label>
+                <select  id="font" name="font">
+                    <option value="h1">S</option>
+                    <option value="h2">XS</option>
+                    <option value="h2">L</option> 
+                </select>
+            </div>
+
+            <div class="Contrast">
+                <label> Increased text contrast:</label>
+                <label class="switch">
+                    <input type="checkbox">
+                    <div class="slider round"></div>
+                </label>
+            </div>
+
+            <div class="Touch">
+                <label for="touch">Touch and hold time:</label>
+                <select  id="touch" name="touch">
+                    <option value="h1">Short</option>
+                    <option value="h2">Medium</option>
+                    <option value="h2">Long</option> 
+                </select>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

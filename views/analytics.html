@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/analytics-view.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../images/profile.png" alt="profile-pic">
+        <div class="my-apartments">
+            <h2>My Apartments</h2>
+            <select  id="apartments">
+                <option value="h1">Apartment1</option>
+                <option value="h2">Apartment2</option>
+                <option value="h3">Apartment3</option>
+                <option value="h4">Apartment4</option>
+            </select>
+            <a href="../add_new_apartments.html">
+                <button disabled class="new-apartment">add new apartment</button></a>
+        </div>
+        
+        <div class="container">
+            <ul class="menu-links links">
+                <li >
+                    <a href="../index.html" class="fa-solid fa-house-signal"></a>
+                    <a href="../index.html">Appliances</a>
+                </li>
+                <li>
+                    <a href="./security.html" class="fa-solid fa-video"></a>
+                    <a href="./security.html">Security</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <a href="#">Analytics</a>
+                </li>
+            </ul>
+            <ul class="options links">
+                <li>
+                    <a href="./settings.html" class="fa-solid fa-gear"></i>
+                    <a href="./settings.html">Settings</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <a href="#">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="charts">
+        <h2>AC cost</h2>
+        <div class="ac-chart chart">
+            <canvas></canvas>
+        </div>
+        
+        <h2>Heating cost</h2>
+        <div class="heating-chart chart">
+            <canvas></canvas>
+        </div>
+        
+        <h2>Lights usage</h2>
+        <div class="lights-chart chart">
+            <canvas></canvas>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" defer src="../scripts/analytics.js"></script>
+</body>
+</html>
