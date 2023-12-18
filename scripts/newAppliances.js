@@ -36,9 +36,9 @@ document
     console.log(newRoom);
 
     document.getElementById("appliance-form").reset();
-    window.location.href = "../home.html"
+    window.location.href = "../index.html"
   });
 
   document.querySelector('.header button').addEventListener('click', () => {
-    window.location.href = '../home.html';
+    window.location.href = '../index.html';
 });
